@@ -40,7 +40,7 @@
     }
 
     //pass the query to the sql api endpoint
-    $.getJSON('/sql?q=' + sql, function(data) {
+    $.getJSON('http://localhost:3000/sql?q=' + sql, function(data) {
       if (!data.error) {
         //convert topojson coming over the wire to geojson using mapbox omnivore
         var features = omnivore.topojson.parse(data); //should this return a featureCollection?  Right now it's just an array of features.
