@@ -73,10 +73,37 @@
       margin: 0;
       overflow-x: scroll;
     }
-
-
-
-  
- 
-  
-
+    .modal-content {
+        border-radius: 0px;
+        top: 120px;
+    }
+    .modal-body {
+        max-height: 500px;
+        overflow-y: auto;
+    }
+    .modal-padding {
+        padding-top: 15px;
+    }
+    .modal-span {
+        right: 5px;
+        top: 0.5px;
+        position: relative;
+        padding-left: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #fff;
+        border-color: #d6d6d6;
+        border-style: solid;
+        border-width: 1px 1px 1px 0;
+    }
+    .credential-form {
+        width: 85%;
+        height: 30px;
+        border-radius: 0;
+        border: 1px solid #d6d6d6;
+        padding: 4px 6px;
+    }
+    .credential-form:focus {
+        outline: none;
+    }
